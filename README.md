@@ -29,22 +29,6 @@ The paper you can check on folder ```References.```
 5. For hitting the API in localhost you can use **POST MAN** Aplication, select this addres ```http://0.0.0.0:5000/predict```
 6. This example values(json)
 
-```{"total_rec_int": 0,
-  "total_rec_late_fee": 0,
-  "term": "string",
-  "installment": 0,
-  "funded_amnt": 0,
-  "loan_amnt": 0,
-  "dti": 0,
-  "funded_amnt_inv": 0,
-  "annual_inc": 0,
-  "grade": "string",
-  "home_ownership": "string",
-  "mo_sin_old_rev_tl_op": 0,
-  "tot_hi_cred_lim": 0,
-  "acc_open_past_24mths": 0,
-  "num_rev_tl_bal_gt_0": 0}
-
 | VARIABLES        | DATA TYPE           |
 | ------------- |:-------------:| 
 | total_rec_ints      | FLOAT | 
@@ -62,3 +46,20 @@ The paper you can check on folder ```References.```
 | tot_hi_cred_lim | FLOAT |
 | acc_open_past_24mths | FLOAT |
 | num_rev_tl_bal_gt_0 | FLOAT |
+
+
+```{"total_rec_int": 0,
+  "total_rec_late_fee": 0,
+  "term": "string",
+  "installment": 0,
+  "funded_amnt": 0,
+  "loan_amnt": 0,
+  "dti": 0,
+  "funded_amnt_inv": 0,
+  "annual_inc": 0,
+  "grade": "string",
+  "home_ownership": "string",
+  "mo_sin_old_rev_tl_op": 0,
+  "tot_hi_cred_lim": 0,
+  "acc_open_past_24mths": 0,
+  "num_rev_tl_bal_gt_0": 0}
