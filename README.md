@@ -9,7 +9,7 @@ Lending club is a p2p lending company, nowadays everyone can invest. From the co
 
 
 > ### 2. Define Target Definitions (Label)
-Based on white paper by Dr. Ronen Meiri from DMWay Analytics **It makes sense in this case to define bad loans as “Charged Off” and the population as all the other loans that are (“fully paid”).?**
+Based on white paper by Dr. Ronen Meiri from DMWay Analytics **It makes sense in this case to define bad loans as “Charged Off” and the population as all the other loans that are (“fully paid”).**
 
 ```“Does not meet the credit policy. Status: Charged Off” and “Does not meet the credit policy. Status: Fully Paid.” It is not clear why loans are given to users that “Does not meet the credit policy” and there is not much documentation on these categories. Now we need to define what is considered a “bad loan.” For example, is a loan payment that is 16 days overdue considered a bad loan? Such a loan does possess more risk than a fully payed loan, but it is still in the process of collection.```
 
