@@ -49,18 +49,18 @@ The paper you can check on folder ```References.```
 
 ___
 
-{"total_rec_int": 0,
-  "total_rec_late_fee": 0,
+{"total_rec_int": 0.0,
+  "total_rec_late_fee": 0.0,
   "term": "string",
-  "installment": 0,
-  "funded_amnt": 0,
-  "loan_amnt": 0,
-  "dti": 0,
-  "funded_amnt_inv": 0,
-  "annual_inc": 0,
+  "installment": 0.0,
+  "funded_amnt": 0.0,
+  "loan_amnt": 0.0,
+  "dti": 0.0,
+  "funded_amnt_inv": 0.0,
+  "annual_inc": 0.0,
   "grade": "string",
   "home_ownership": "string",
-  "mo_sin_old_rev_tl_op": 0,
-  "tot_hi_cred_lim": 0,
-  "acc_open_past_24mths": 0,
-  "num_rev_tl_bal_gt_0": 0}
+  "mo_sin_old_rev_tl_op": 0.0,
+  "tot_hi_cred_lim": 0.0,
+  "acc_open_past_24mths": 0.0,
+  "num_rev_tl_bal_gt_0": 0.0}
