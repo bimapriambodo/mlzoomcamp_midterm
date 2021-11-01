@@ -47,6 +47,7 @@ The paper you can check on folder ```References.```
 | acc_open_past_24mths | FLOAT |
 | num_rev_tl_bal_gt_0 | FLOAT |
 
+___
 
 {"total_rec_int": 0,
   "total_rec_late_fee": 0,
