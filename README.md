@@ -43,7 +43,7 @@ The paper you can check on folder ```References.```
   "mo_sin_old_rev_tl_op": 0,
   "tot_hi_cred_lim": 0,
   "acc_open_past_24mths": 0,
-  "num_rev_tl_bal_gt_0": 0}```
+  "num_rev_tl_bal_gt_0": 0}
 
 | VARIABLES        | DATA TYPE           |
 | ------------- |:-------------:| 
