@@ -28,6 +28,7 @@ The paper you can check on folder ```References.```
 4. After finish, please write this sintax ```docker run -p 5000:5000 lending_api```
 5. For hitting the API in localhost you can use **POST MAN** Aplication, select this addres ```http://0.0.0.0:5000/predict```
 6. This example values(json)
+
 ```{
   "total_rec_int": 0,
   "total_rec_late_fee": 0,
