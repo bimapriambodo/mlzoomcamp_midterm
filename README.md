@@ -57,7 +57,8 @@ heroku container:release web --app YOUR_UNIQUE_NAME
 https://[YOUR_UNIQUE_NAME].herokuapp.com/predict
 
 In this case you can try my own webservice
-https://lendingclub-zoom.herokuapp.com/predict
+https://lendingclub-zoom.herokuapp.com/predict or
+https://lendingclub-zoom.herokuapp.com/docs
 
 this example format:
 ```JSON
