@@ -1,7 +1,7 @@
 # 1. Library imports
 import uvicorn
 from fastapi import FastAPI
-from lendingclub import lendingclub
+from lendingclub import LendingClub
 import numpy as np
 import pickle
 import pandas as pd
@@ -26,7 +26,7 @@ def predict(data,model):
     return y_pred_train[0]
 
 @app.post('/predict')
-def predict_loan(data:lendingclub):
+def predict_loan(data:LendingClub):
     data = data.dict()
     # print(data)
 

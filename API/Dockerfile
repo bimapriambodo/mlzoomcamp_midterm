@@ -1,11 +1,14 @@
-From python:3.8.12-slim
+From tiangolo/uvicorn-gunicorn-fastapi:python3.8
 
-COPY . /usr/app/
-EXPOSE 5000
-WORKDIR /usr/app/
+Run pip install pipenv
 
-ADD ./requirements.txt /usr/app/requirements.txt
-RUN pip install -r requirements.txt
-ADD . /usr/app/
+WORKDIR /app
+COPY ["Pipfile", "Pipfile.lock", "./"]
 
-CMD python predict.py
+RUN pipenv install --system --deploy
+
+COPY ["predict.py", "lendingclub.py", "catboost_v1.pkl", "./"]
+
+COPY . .
+
+CMD gunicorn -w 3 -k uvicorn.workers.UvicornWorker predict:app --bind 0.0.0.0:$PORT

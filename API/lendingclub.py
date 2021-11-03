@@ -3,7 +3,7 @@ import json
 import numpy as np
 
 # 2. Class which describes Bank Notes measurements
-class lendingclub(BaseModel):
+class LendingClub(BaseModel):
     total_rec_int: float 
     total_rec_late_fee : float 
     term: str 
