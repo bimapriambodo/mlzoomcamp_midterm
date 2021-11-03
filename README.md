@@ -18,11 +18,11 @@ The paper you can check on folder ```References.```
 > ### 3. Tutorial Run Notebook and Train.py
 1. First you must create virtual enviroment, for example if you use anaconda env, you can use these sintax: 
 ```python
-conda create -n yourenvname python=x.x anaconda
+conda create -n YOUR_ENV_NAME python=X.X anaconda
 ``` 
 then 
 ```python
-activate yourenvname
+activate YOUR_ENV_NAME
 ```
 2. After create the virtual env, you have to install all **requirements.txt** use this sintax: ```pip install -r requirements.txt```
 3. Open the Jupyter Notebook, and select **notebook.ipynb.** This notebook containing Exporatory Data Analysis (EDA) till modelling.
