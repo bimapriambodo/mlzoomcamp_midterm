@@ -30,11 +30,54 @@ activate yourenvname
 
 > ### 3. Tutorial Run API Webservice
 1. First you have to install Docker, you can donwloaded at https://www.docker.com/
-2. Open CMD the select the directory of ```API folder``` on yout computer
-3. Write this sintax ```docker build -t lending_api .``` wait untill finished!
-4. After finish, please write this sintax ```docker run -p 5000:5000 lending_api```
-5. For hitting the API in localhost you can use **POST MAN** Aplication, select this addres ```http://0.0.0.0:5000/predict```
-6. This example values(json)
+2. Because this api deploy to Heroku, you need register first to https://id.heroku.com/login
+3. Install Heroku Cli for windows (if you use windows)
+4. Then open CMD, you need enter the to directory API
+5. Then please follow this sintax one by one
+```python
+heroku login
+```
+after login, you need login to Heroku container
+```python
+heroku container:login
+```
+then you have to make app from Heroku
+```python
+heroku create YOUR_UNIQUE_NAME
+```
+after that push the container to the heroku using command
+```python
+heroku container:push web --app YOUR_UNIQUE_NAME
+```
+Finaly release the api web service using command
+```python
+heroku container:release web --app YOUR_UNIQUE_NAME
+```
+6. After deploy the container to heroku, you can test the api with Json format
+https://[YOUR_UNIQUE_NAME].herokuapp.com/predict
+
+In this case you can try my own webservice
+https://lendingclub-zoom.herokuapp.com/predict
+
+this example format:
+```JSON
+{"total_rec_int": 0.0,
+  "total_rec_late_fee": 0.0,
+  "term": "string",
+  "installment": 0.0,
+  "funded_amnt": 0.0,
+  "loan_amnt": 0.0,
+  "dti": 0.0,
+  "funded_amnt_inv": 0.0,
+  "annual_inc": 0.0,
+  "grade": "string",
+  "home_ownership": "string",
+  "mo_sin_old_rev_tl_op": 0.0,
+  "tot_hi_cred_lim": 0.0,
+  "acc_open_past_24mths": 0.0,
+  "num_rev_tl_bal_gt_0": 0.0}
+  ```
+___
 
 | VARIABLES        | DATA TYPE           |
 | ------------- |:-------------:| 
@@ -55,19 +98,3 @@ activate yourenvname
 | num_rev_tl_bal_gt_0 | FLOAT |
 
 ___
-
-{"total_rec_int": 0.0,
-  "total_rec_late_fee": 0.0,
-  "term": "string",
-  "installment": 0.0,
-  "funded_amnt": 0.0,
-  "loan_amnt": 0.0,
-  "dti": 0.0,
-  "funded_amnt_inv": 0.0,
-  "annual_inc": 0.0,
-  "grade": "string",
-  "home_ownership": "string",
-  "mo_sin_old_rev_tl_op": 0.0,
-  "tot_hi_cred_lim": 0.0,
-  "acc_open_past_24mths": 0.0,
-  "num_rev_tl_bal_gt_0": 0.0}
